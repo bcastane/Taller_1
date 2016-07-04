@@ -1,2 +1,13 @@
 <h1>Benjamin Castañeda</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+
+<%= form_tag(thanks_path, method:
+"post") do %>
+Nombre:<br>
+ <%= text_field_tag(:nombre) %><br>
+ Email:<br>
+ <%= email_field_tag(:email) %><br>
+ Edad: <br>
+  <%= number_field_tag(:edad) %><br>
+ <%= submit_tag("Enviar") %>
+<% end %>
