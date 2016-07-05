@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   post '/thanks' => 'welcome#thanks'
 
+  get '/landing' => 'welcome#landing'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
